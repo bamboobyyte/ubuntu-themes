@@ -61,8 +61,8 @@ cp wallpapers/WhiteSur-wallpapers/* ~/Pictures/Wallpapers/WhiteSur-wallpapers/
 cp wallpapers/win11/* ~/Pictures/Wallpapers/win11/
 
 # install cursor
-# mkdir ~/.icons
-# tar -xvzf icon-themes/macOS-Monterey.tar.gz -C ~/.icons
+mkdir ~/.icons
+tar -xvzf icon-themes/macOS-Monterey.tar.gz -C ~/.icons
 
 
 
