@@ -33,7 +33,7 @@ mkdir -p ~/.local/share/glib-2.0/schemas
 for name in "${!extensions[@]}"; do
   value=${extensions[$name]}
   # Create the symbolic link
-  ln -s "${ext_path}/${name}/schemas/${value}" "${lib_path}/${value}"
+  ln -s "${ext_path}/${name}/schemas/${value}" "${glib_path}/${value}"
 done
 
 # compile schemas
