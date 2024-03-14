@@ -7,7 +7,6 @@ font_dst=~/".local/share/fonts/"
 icon_theme_path="icon-themes"
 gtk_theme_path="gtk-themes"
 icon_path="icon-themes"
-font_path="/usr/share/fonts"
 
 # Declare a extension dictionary
 declare -A extensions=(
@@ -30,7 +29,7 @@ done
 pkill gnome-shell
 
 # install schemas
-mkdir -p $glib_path
+mkdir -p ~/.local/share/glib-2.0/schemas
 for name in "${!extensions[@]}"; do
   value=${extensions[$name]}
   # Create the symbolic link
@@ -53,10 +52,10 @@ ${gtk_theme_path}/WhiteSur-gtk-theme/tweaks.sh
 # install fonts
 mkdir -p /usr/share/fonts/Microsoft
 mkdir -p /usr/share/fonts/Apple
-cp fonts/segoeui.ttf $font_path/Microsoft/segoeui.ttf
-cp fonts/segoeuil.ttf $font_path/Microsoft/segoeuil.ttf
-cp fonts/SF-Pro-Display-Bold.otf $font_path/Apple/SF-Pro-Display-Bold.otf
-cp fonts/SF-Pro-Display-Regular.otf $font_path/Apple/SF-Pro-Display-Regular.otf
+cp fonts/segoeui.ttf $font_dst/Microsoft/segoeui.ttf
+cp fonts/segoeuil.ttf $font_dst/Microsoft/segoeuil.ttf
+cp fonts/SF-Pro-Display-Bold.otf $font_dst/Apple/SF-Pro-Display-Bold.otf
+cp fonts/SF-Pro-Display-Regular.otf $font_dst/Apple/SF-Pro-Display-Regular.otf
 fc-cache -fv
 
 # copy wallpaper
