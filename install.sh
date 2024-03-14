@@ -29,6 +29,7 @@ done
 pkill gnome-shell
 
 # install schemas
+mkdir -r $glib_path
 for name in "${!extensions[@]}"; do
   value=${extensions[$name]}
   # Create the symbolic link
