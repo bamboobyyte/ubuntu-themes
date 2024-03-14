@@ -57,6 +57,7 @@ cp fonts/segoeui.ttf $font_path/Microsoft/segoeui.ttf
 cp fonts/segoeuil.ttf $font_path/Microsoft/segoeuil.ttf
 cp fonts/SF-Pro-Display-Bold.otf $font_path/Apple/SF-Pro-Display-Bold.otf
 cp fonts/SF-Pro-Display-Regular.otf $font_path/Apple/SF-Pro-Display-Regular.otf
+$font_path
 
 # copy wallpaper
 mkdir -p ~/Pictures/Wallpapers/WhiteSur-wallpapers/
