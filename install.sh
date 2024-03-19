@@ -50,13 +50,13 @@ ${gtk_theme_path}/WhiteSur-gtk-theme/tweaks.sh
 
 
 # install fonts
-mkdir -p /usr/share/fonts/Microsoft
-mkdir -p /usr/share/fonts/Apple
+mkdir -p $font_dst/Microsoft
+mkdir -p $font_dst/Apple
 cp fonts/segoeui.ttf $font_dst/Microsoft/segoeui.ttf
 cp fonts/segoeuil.ttf $font_dst/Microsoft/segoeuil.ttf
 cp fonts/SF-Pro-Display-Bold.otf $font_dst/Apple/SF-Pro-Display-Bold.otf
 cp fonts/SF-Pro-Display-Regular.otf $font_dst/Apple/SF-Pro-Display-Regular.otf
-fc-cache -fv
+# fc-cache -fv
 
 # copy wallpaper
 mkdir -p ~/Pictures/Wallpapers/WhiteSur-wallpapers/
