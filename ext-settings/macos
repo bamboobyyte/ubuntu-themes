@@ -1,0 +1,8 @@
+org.gnome.shell.extensions.dash-to-dock extend-height false
+org.gnome.shell.extensions.dash-to-dock dock-position 'BOTTOM'
+org.gnome.shell.extensions.blur-my-shell.dash-to-dock blur false
+org.gnome.shell.extensions.blur-my-shell.panel customize true
+org.gnome.shell.extensions.blur-my-shell.panel sigma 120
+org.gnome.shell.extensions.blur-my-shell.panel brightness 1.0
+org.gnome.shell.extensions.blur-my-shell.overview customize true
+org.gnome.shell.extensions.blur-my-shell.overview brightness 0.8
